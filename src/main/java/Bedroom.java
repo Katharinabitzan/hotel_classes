@@ -48,4 +48,8 @@ public class Bedroom {
             occupied = true;
         }
     }
+
+    public void removeGuests() {
+        guests.clear();
+    }
 }

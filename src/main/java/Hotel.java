@@ -53,4 +53,8 @@ public class Hotel {
         return array.size();
     }
 
+    public void checkGuestsOut(Bedroom bedroom) {
+        bedroom.removeGuests();
+    }
+
 }
