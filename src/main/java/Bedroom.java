@@ -43,7 +43,7 @@ public class Bedroom {
     }
 
     public void addGuest(Guest guest) {
-        if (numberOfGuests() < capacity) {
+        if (numberOfGuests() < capacity && !isOccupied()) {
             guests.add(guest);
             occupied = true;
         }

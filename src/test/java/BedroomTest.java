@@ -55,4 +55,12 @@ public class BedroomTest {
         assertEquals(1, bedroom1.numberOfGuests());
         assertEquals(true, bedroom1.isOccupied());
     }
+
+    @Test
+    public void cannotAddGuestToBookedRoom() {
+        bedroom1.addGuest(guest1);
+        assertEquals(true, bedroom1.isOccupied());
+        bedroom1.addGuest(guest1);
+        assertEquals(1, bedroom1.numberOfGuests());
+    }
 }
